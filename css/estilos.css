@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.menu {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: url('../fondo\ nav.png');
+    background-size: center;
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1 {
+  background: url('../logo.png');
+  background: no-repeat;
+  text-align: center;
+
+}
+
+header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+header nav .menu li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+header nav .menu li a {
+    color: #a1afa9;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    transition: trasform 1s; box-shadow: 1s; filter: 1s;
+}
+header nav .menu li a:hover {
+    transform: scale(1);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.6);
+    color: violet;
+}
+
+header nav .menu li .submenu {
+    display: none;
+    background: #eafff3;
+    position: absolute;
+    left: 0;
+    width: 150px;
+}
+
+header nav .menu li .submenu li {
+    display: block;
+}
+
+header nav .menu li:hover .submenu {
+    display: block;
+}
+.banda {
+    display: inline-block;
+    width: 33%;
+    padding: 50px 0;
+}
+
+section img {
+        width: 100%;
+ }
+
+main {    
+    color: #a1afa9;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 100;
+    word-spacing: 3px;
+    text-align: center;
+    line-height: 150%;
+    text-transform: none;
+    background: black;
+}
+main p {    
+    color: #eafff3;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 100;
+    word-spacing: 3px;
+    text-align: center;
+    line-height: 150%;
+    text-transform: none;
+    padding: 35px 0;
+}
+
+body {
+    background-image: url('../fondo.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    color: #a1afa9;
+    font-family:'Libre Franklin', sans-serif;
+    font-weight: 0;
+    word-spacing: 2px;
+    line-height: 150%;
+    text-transform: none;
+    padding-top: 140px;
+ 
+}
+
+
+#CD, #Tema, #videos {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+h2 {    
+    text-align: center;
+    color: #eafff3;
+    font-family:'Libre Franklin', sans-serif;
+    font-size: 30px;
+    font-weight: 0;
+    word-spacing: 50px;
+    line-height: 150%;
+    text-transform: none;
+}
+
+#lucas {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin: auto;
+    text-align: center;
+    transition: trasform 0.5s; box-shadow: 0.5s; filter: 1s;
+}
+#lucas:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.6);
+    filter: saturate(1.5);
+}
+#gabriel {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin: auto;
+    text-align: center;
+    transition: trasform 0.5s; box-shadow: 0.5s; filter: 1s;
+}
+#gabriel:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.6);
+    filter: saturate(1.5);
+}
+#juan {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin: auto;
+    text-align: center;
+    top: 13px;
+    transition: trasform 0.5s; box-shadow: 0.5s; filter: 1s;
+}
+
+#juan:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.6);
+    filter: saturate(1.5);
+}
+@keyframes flechasubir {
+    0% {
+        transform: rotate(0);
+        background: black;
+    }
+    25% {
+        transform: rotate(70deg);
+        background: grey;
+    }
+    60% {
+        transform: rotate(20deg);
+        background: whitesmoke;
+    
+    }
+    100% {
+        transform: rotate(0);
+        background: wheat;
+    }
+}
+
+.subir{
+
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border:3px solid #666;
+    background: #eafff3;
+    position: relative;
+    left: 98%;
+    animation-name: flechasubir;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    }
+   
+.cds {
+    display: flex;
+    justify-content:space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno  dos";
+    grid-gap: 10px;
+}
+
+.cds .usted {
+    background-image: url('../cd.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-area: uno;
+}
+.cds .ii{
+    background-image: url('../cd2.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-area: dos;
+}
+.Redes {
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 200px 200px;
+grid-gap: 10px;
+width: 90%;
+margin: auto;
+grid-column-gap: 50px;
+grid-row-gap: 150px;
+}
+
+#videoyredes {
+    text-align: center;
+    background: url('../fondosecudario5.jpg');
+    background-size: cover;
+}
+
+.fotos {
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr 1fr;
+   grid-template-rows: 200px 200px;
+   grid-template-areas: "FotoP juan banda1 lucas" 
+                        "FotoP banda2 gariel banda3";
+    grid-gap: 10px;
+
+}
+.fotos li {
+    background: #333;
+}
+
+.fotos .bandaprincipal {
+    grid-area: FotoP;
+    background: url('../bandaprincipal.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .8s;
+    filter: grayscale(1);
+}
+.fotos .juan1 {
+    grid-area: juan;
+    background: url('../juan1.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .8s;
+    filter: grayscale(1);
+}
+.fotos .banda1 {
+    grid-area: banda1;
+    background: url('../banda1.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .8s;
+    filter: grayscale(1);
+}
+.fotos .lucas1 {
+    grid-area: lucas;
+    background: url('../lucas1.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .8s;
+    filter: grayscale(1);
+}
+.fotos .banda2 {
+    grid-area: banda2;
+    background: url('../band2.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .8s;
+    filter: grayscale(1);
+}
+.fotos .gabriel {
+    grid-area: gariel;
+    background: url('../gabi1.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .8s;
+    filter: grayscale(1);
+}
+.fotos .banda3 {
+    grid-area: banda3;
+    background: url('../banda3.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .8s;
+    filter: grayscale(1);
+}
+
+
+.fotos .bandaprincipal:hover{
+    filter: grayscale(0);
+}
+.fotos .juan1:hover{
+    filter: grayscale(0);
+}
+.fotos .banda1:hover{
+    filter: grayscale(0);
+}
+.fotos .lucas1:hover{
+    filter: grayscale(0);
+}
+.fotos .banda2:hover{
+    filter: grayscale(0);
+}
+.fotos .gabriel:hover{
+    filter: grayscale(0);
+}
+.fotos .banda3:hover{
+    filter: grayscale(0);
+}
